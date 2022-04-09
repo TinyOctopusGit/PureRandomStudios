@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()" onkeypress="jump()">
+
+  <head>
+    <title>Games - PureRandom Studios</title>
+    <link rel="icon" type=image/x-icon href="icon.png">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      function sta(){};
+      function jump(){};
+      function check(){};
+      </script>
+      <link href='style.css' rel='stylesheet'/>
+          <meta charset="UTF-8">
+  </head>
+
+    <style>
+
+@import url(http://fonts.googleapis.com/css?family=Geo&subset=latin);
+
+        body {
+            margin:0;
+            background-color: #E1E2E2;
+            color: #1D2228;
+        }
+        
+        /* Nav Bar*/
+        .navbar {
+          overflow: hidden;
+          background-color: #1D2228;
+          position: fixed;
+          z-index: 999;
+          top: 0;
+          width: 100%;
+        }
+        
+        .navbar a {
+          float: right;
+          display: block;
+          color: #f2f2f2;
+          background-color: #FB8122;
+          transition: all 0.3s ease;
+          text-align: center;
+          text-decoration: none;
+          padding: 14px 20px;
+          font-family: Arial;
+          font-size: 17px;
+        }
+        
+        .navbar a:hover {
+          background: #E1E2E2;
+          color: black;
+        }
+
+        .active {
+          background-color: #E1E2E2;
+        }
+        /* Nav Bar End*/
+
+        .title {
+            background-color: rgb(0, 183, 255);
+            margin-top: 50px;
+        }
+
+        .main {
+          padding: 16px;
+		  margin-left: 10%;
+		  margin-right: 10%;
+          height: 1500px; /* Used in this example to enable scrolling */
+          font-family: Arial;
+        }
+
+        .hero-image {
+          background: url(https://1.bp.blogspot.com/-y1wbpubzekk/WSe89fdzzKI/AAAAAAAAHKg/UPvELMDQ2QYuKplsf2xvTA60k0bOoVrFgCLcB/s640/space_invaders.jpg) no-repeat center; 
+          background-size: cover;
+          margin-top: 30px;
+          height: 500px;
+          position: relative;
+        }
+
+        .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          margin-top: 30px;
+          font-family: 'Geo', serif;
+          -webkit-font-smoothing: none;
+          color: #FB8122;
+        }
+
+		.rectangle{
+			height: 40px;
+			width: auto;
+			background-color: #1D2228;
+			color:rgb(0, 183, 255)
+		}
+
+    
+
+        </style>
+
+        <body>
+            <div class="navbar">
+                <a href="games.html"><i class="fa fa-gamepad"></i></a> 
+                <a href="blender.html"><i class="fa fa-image"></i></a>
+                <a href="index.html"><i class="fa fa-home"></i></a> 
+              </div>
+
+            <div class="hero-image">
+                <div class="hero-text">
+                  <h1 style="font-size:200px;">Games</h1>
+                </div>
+            </div>
+
+			<div class="rectangle"></div>
+
+			<div class="main">
+            <h1>Welcome to the Games page</h1>
+			<p style="font-size: 120%;">Super fun amazing game until I have time to make a better one!!!!</p>
+      <br>
+          
+          <p>Best Score: <span id="scorebest">0</span></p>
+          <p>Score: <span id="scoreSpan"></span></p>
+          <div class="game">
+              <div id="character">
+              
+              </div>
+              <div id="block"></div>
+          </div>
+          <h1 id="btns" onclick="this.style.display='none';sta()">
+            Start The Game
+          </h1>
+          <p>left-click or touch to jump.</p>
+      <script src='script.js'>
+      </script>
+
+			</div>
+
+      
+      
+
+    </body>
+
+    
+
+</html>
