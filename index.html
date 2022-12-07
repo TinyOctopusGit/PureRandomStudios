@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <meta name="author" content="Sam Styles">
+    <meta name="keywords" content="javascript,background-image,slides,slider,slideshow,gallery,js">
+
+    <script src="https://kit.fontawesome.com/57b929fbcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>PureRandomStudios</title>
+    
+</head>
+
+<style>
+    /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1180px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+
+<body>
+
+    <!--NavBar-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">PureRandomStudios</a>
+        <a href="renders.html" class="borderLinks"><i class="fa fa-fw fa-image"></i> Renders</a>
+        <a href="animations.html" class="borderLinks"><i class="fa fa-fw fa-video"></i>  Animations</a>
+        <a href="donate.html" class="borderLinks"><i class="fa fa-fw fa-dollar"></i> Donate</a>
+        
+        <a href="javascript:void(0);" class="icon" style="margin-right: -2vw;" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="renders.html">Renders</a>
+            <a href="animations.html">Animations</a>
+            <a href="donate.html">Donate</a>
+        </div>
+    </div>
+
+
+    <!-- SlideShowThing -->
+    <div class="container page-wrap">
+        <article class="post">
+       
+            <div id="ms--site-widget-6894" class="site-widget widget_text      font-size-18 text-left"  style=>
+            <div class="text-widget ">
+      
+        <div class="container">
+            <div class="editor-content"><div class="video-hero">
+                <div class="video-background">
+                    <div class="video-foreground">
+                        <!-- https://www.dropbox.com/s/bve9zmbkneuz76a/Broll.mp4?dl=0 -->
+                        <!-- https://www.dropbox.com/s/6i0gpby2w3cabfi/homepagereel.mp4?dl=0&amp;raw=1 -->
+                        <video src="video/Broll.mp4" autoplay="1" loop="1" muted="1" playsinline="1"></video>
+                    </div> 
+                </div>
+                <div class="video-hero-text">
+                    <h1>PureRandomStudios</h1>
+                    <p></p>
+                    <a class="btn primary" href="">View Work<i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 5%;">
+        <div class="displayBox column">
+            <h1>Renders</h1>
+            <p>All 3D models for renders are made solely in Blender</p>
+            <br>
+            <a class="buttons" href="renders.html">View Renders</a>
+        </div>
+        <div class="displayBox column">
+            <h1>Animations</h1>
+            <p>Animations are made in Blender and UnrealEngine 5</p>
+            <br>
+            <a class="buttons" href="animations.html">View Animations</a>
+        </div>
+        <div class="displayBox column">
+            <h1>Donate</h1>
+            <p>Donate to keep the renders rolling and gain acces to more project files</p>
+            <br>
+            <a class="buttons" href="donate.html">Donate</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Weeee a footer</p>
+        <br>
+        <a href="mailto:contact@purerandomstudios.com" style="color: rgb(80, 80, 80);">contact@purerandomstudios.com</a></p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

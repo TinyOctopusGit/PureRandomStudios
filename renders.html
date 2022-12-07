@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <meta name="author" content="Sam Styles">
+    <meta name="keywords" content="javascript,background-image,slides,slider,slideshow,gallery,js">
+
+    <title>PureRandomStudio</title>
+
+    <script src="https://kit.fontawesome.com/57b929fbcb.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+    
+</head>
+
+<style>
+.gallery {
+    padding: 1%;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  padding: 1%;
+}
+
+.container:hover .title {
+  opacity: 1;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+
+<body>
+
+    <!--NavBar-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="">PureRandomStudio</a>
+        <a href="renders.html" class="borderLinks active"><i class="fa fa-fw fa-image"></i> Renders</a>
+        <a href="animations.html" class="borderLinks"><i class="fa fa-fw fa-video"></i>  Animations</a>
+        <a href="donate.html" class="borderLinks"><i class="fa fa-fw fa-dollar"></i> Donate</a>
+        
+        <a href="javascript:void(0);" class="icon" style="margin-right: -2vw;" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="renders.html">Renders</a>
+            <a href="animations.html">Animations</a>
+            <a href="donate.html">Donate</a>
+        </div>
+    </div>
+
+    <br>
+    <h1 style="text-align: center;">Renders</h1>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="row">
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>         
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+        </div>
+        <div class="row">
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>         
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+        </div>
+        <div class="row">
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>         
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+        </div>
+        <div class="row">
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>         
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+        </div>
+        <div class="row">
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>         
+            <div class="column"><div class="container"><img src="img/1.jpg" class="image container"><div class="title">Title</div></div></div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+    <footer>
+        <p>Weeee a footer</p>
+        <br>
+        <a href="mailto:contact@purerandomstudios.com" style="color: rgb(80, 80, 80);">contact@purerandomstudios.com</a></p>
+    </footer>
+
+</body>
+</html>

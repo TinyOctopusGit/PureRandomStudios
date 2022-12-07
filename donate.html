@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <meta name="author" content="Sam Styles">
+    <meta name="keywords" content="javascript,background-image,slides,slider,slideshow,gallery,js">
+
+    <script src="https://kit.fontawesome.com/57b929fbcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>PureRandomStudios</title>
+    
+</head>
+
+<style>
+      /* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1180px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+<body>
+
+    <!--NavBar-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="">PureRandomStudios</a>
+        <a href="renders.html" class="borderLinks"><i class="fa fa-fw fa-image"></i> Renders</a>
+        <a href="animations.html" class="borderLinks"><i class="fa fa-fw fa-video"></i>  Animations</a>
+        <a href="donate.html" class="borderLinks active"><i class="fa fa-fw fa-dollar"></i> Donate</a>
+        
+        <a href="javascript:void(0);" class="icon" style="margin-right: -2vw;" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="renders.html">Renders</a>
+            <a href="animations.html">Animations</a>
+            <a href="donate.html">Donate</a>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; margin-top:20vh;">Donate</h1>
+    <h3 style="text-align: center; margin-top:1vh;">With</h3>
+    <br>
+
+    <div class="row">
+        <div class="displayBox column">
+            <h1>Patreon</h1>
+            <p>Donate through Patreon to gain acces to project files</p>
+            <br>
+            <a class="buttons" href="https://www.patreon.com/user?u=83919561" target="_blank">Patreon</a>
+        </div>
+        <div class="displayBox column">
+          <br>
+          <h1>Or</h1>
+      </div>
+        <div class="displayBox column">
+            <h1>Paypal</h1>
+            <p>Donating through Paypal won't get you anything but it is still helpful. :)</p>
+            <br>
+            <a class="buttons" href="#" target="_blank">Paypal</a>
+        </div>
+    </div>
+
+    <footer>
+      <p>Weeee a footer</p>
+      <br>
+      <a href="mailto:contact@purerandomstudios.com" style="color: rgb(80, 80, 80);">contact@purerandomstudios.com</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
